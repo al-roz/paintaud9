@@ -1,85 +1,84 @@
-# Created by https://www.gitignore.io/api/c,windows,visualstudio
-# Edit at https://www.gitignore.io/?templates=c,windows,visualstudio
+# Created by https://www.toptal.com/developers/gitignore/api/c++,qt,visualstudio
+# Edit at https://www.toptal.com/developers/gitignore?templates=c++,qt,visualstudio
 
-### C ###
+### C++ ###
 # Prerequisites
 *.d
 
-# Object files
+# Compiled Object files
+*.slo
+*.lo
 *.o
-*.ko
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
 
 # Precompiled Headers
 *.gch
 *.pch
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
+# Compiled Dynamic libraries
 *.so
-*.so.*
 *.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
 
 # Executables
 *.exe
 *.out
 *.app
-*.i*86
-*.x86_64
-*.hex
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+### Qt ###
+# C++ objects and libs
+*.so.*
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Qt-es
+object_script.*.Release
+object_script.*.Debug
+*_plugin_import.cpp
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qmlc
+*.jsc
+Makefile*
+*build-*
+*.qm
+*.prl
 
-### Windows ###
-# Windows thumbnail cache files
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
+# Qt unit tests
+target_wrapper.*
 
-# Dump file
-*.stackdump
+# QtCreator
+*.autosave
 
-# Folder config file
-[Dd]esktop.ini
+# QtCreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# QtCreator CMake
+CMakeLists.txt.user*
 
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
+# QtCreator 4.8< compilation database 
+compile_commands.json
 
-# Windows shortcuts
-*.lnk
+# QtCreator local machine specific files for imported projects
+*creator.user*
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -113,6 +112,7 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+[Ll]ogs/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -151,7 +151,10 @@ StyleCopReport.xml
 *_i.c
 *_p.c
 *_h.h
+*.ilk
+*.meta
 *.iobj
+*.pdb
 *.ipdb
 *.pgc
 *.pgd
@@ -205,9 +208,6 @@ _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
 
-# JustCode is a .NET coding add-in
-.JustCode
-
 # TeamCity is a build add-in
 _TeamCity*
 
@@ -217,6 +217,9 @@ _TeamCity*
 # AxoCover is a Code Coverage Tool
 .axoCover/*
 !.axoCover/settings.json
+
+# Coverlet is a free, cross platform Code Coverage Tool
+coverage*[.json, .xml, .info]
 
 # Visual Studio code coverage results
 *.coverage
@@ -427,4 +430,7 @@ healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 
-# End of https://www.gitignore.io/api/c,windows,visualstudio
+# Ionide (cross platform F# VS Code tools) working folder
+.ionide/
+
+# End of https://www.toptal.com/developers/gitignore/api/c++,qt,visualstudio

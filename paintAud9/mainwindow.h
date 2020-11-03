@@ -13,13 +13,13 @@ public:
     mainwindow(QWidget *parent = Q_NULLPTR);
     
 private slots:
-    void timer_round(int);
+    void draw_sfear(int);
 
 
 private:
     Ui::mainwindowClass ui;
     //QScopedPointer<QPixmap> pixmap; 
     QPixmap* pixmap;
-    QTimer* timer = nullptr;
+    //QTimer* timer = nullptr;
     
 };

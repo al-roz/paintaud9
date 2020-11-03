@@ -33,19 +33,6 @@
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="startbutton">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>162</y>
-      <width>75</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Paint</string>
-    </property>
-   </widget>
    <widget class="QSlider" name="verticalSlider">
     <property name="geometry">
      <rect>

@@ -8,21 +8,21 @@ mainwindow::mainwindow(QWidget *parent)
     //pixmap.reset(new QPixmap(ui.label->width(),ui.label->height()));
     pixmap = new QPixmap(500, 500);
     pixmap->fill(Qt::white);
-    timer = new QTimer();
-    timer->setInterval(2000);    
-    connect(ui.startbutton, SIGNAL(released()), timer, SLOT(start()));
+    //timer = new QTimer();
+    //timer->setInterval(2000);    
+    //connect(ui.startbutton, SIGNAL(released()), timer, SLOT(start()));
     //connect(timer, SIGNAL(timeout()), this, SLOT(timer_round()));
     ui.verticalSlider->setRange(0, 5);
-    connect(ui.verticalSlider, SIGNAL(valueChanged(int)), this, SLOT(timer_round(int)));
+    draw_sfear(0);
+    connect(ui.verticalSlider, SIGNAL(valueChanged(int)), this, SLOT(draw_sfear(int)));
    
     
 }
 
-void mainwindow::timer_round(int r)
+void mainwindow::draw_sfear(int r)
 {
     QPainter painter(pixmap);
     pixmap->fill(Qt::white);
-    //QPainter painter;
     painter.setPen(QPen(Qt::red,2.5,Qt::PenStyle::SolidLine));
 
     for (int i = 0; i < 10; i++)
